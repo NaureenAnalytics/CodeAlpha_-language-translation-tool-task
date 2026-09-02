@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Language Translation Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🌐 Language Translation Tool</h1>
+            <p>Translate your text quickly and easily</p>
+        </header>
+
+        <main class="translator">
+
+            <div class="language-section">
+
+                <div class="language-box">
+                    <label for="sourceLanguage">Source Language</label>
+
+                    <select id="sourceLanguage">
+                        <option value="en">English</option>
+                        <option value="ur">Urdu</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="ar">Arabic</option>
+                        <option value="hi">Hindi</option>
+                        <option value="zh">Chinese</option>
+                        <option value="it">Italian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                    </select>
+                </div>
+
+                <button id="swapButton" class="swap-button">
+                    ⇄
+                </button>
+
+                <div class="language-box">
+                    <label for="targetLanguage">Target Language</label>
+
+                    <select id="targetLanguage">
+                        <option value="ur">Urdu</option>
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="ar">Arabic</option>
+                        <option value="hi">Hindi</option>
+                        <option value="zh">Chinese</option>
+                        <option value="it">Italian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ko">Korean</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="text-area-section">
+
+                <div class="input-container">
+
+                    <textarea
+                        id="inputText"
+                        placeholder="Enter text to translate..."
+                        maxlength="500"
+                    ></textarea>
+
+                    <div class="counter">
+                        <span id="charCount">0</span>/500
+                    </div>
+
+                </div>
+
+                <div class="output-container">
+
+                    <div id="outputText" class="output-text">
+                        Your translation will appear here...
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="button-section">
+
+                <button id="translateButton" class="translate-button">
+                    Translate
+                </button>
+
+                <button id="copyButton" class="secondary-button">
+                    Copy
+                </button>
+
+                <button id="clearButton" class="secondary-button">
+                    Clear
+                </button>
+
+            </div>
+
+            <p id="statusMessage" class="status"></p>
+
+        </main>
+
+        <footer>
+            <p>Language Translation Tool | Code Alpha Internship</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
